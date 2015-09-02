@@ -8,6 +8,9 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
+\RequirePackage{fancyhdr}
+\RequirePackage[yyyymmdd,hhmmss]{datetime}
+
 
 %%%%%%%%%%
 % Colors %
