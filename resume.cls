@@ -10,6 +10,7 @@
 
 \RequirePackage{fancyhdr}
 \RequirePackage[yyyymmdd,hhmmss]{datetime}
+\RequirePackage{amssymb}
 
 
 %%%%%%%%%%
@@ -43,7 +44,7 @@
   \colorlet{fillheader}{gray}
   \colorlet{header}{white}
 \fi
-\colorlet{textcolor}{gray}
+\colorlet{textcolor}{black}
 \colorlet{headercolor}{gray}
 
 %%%%%%%%%
@@ -76,7 +77,7 @@
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
@@ -86,7 +87,7 @@
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{1cm}
   \vspace{-2\parskip}
 }
 
@@ -152,7 +153,7 @@
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=gray} #3}\\%
     #4\vspace{\parsep}%
   }\\}
 
@@ -169,7 +170,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{3.6}(1.5, 2.8)
   \begin{flushright}
   \obeycr
 }{%
@@ -319,7 +320,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=false,       
