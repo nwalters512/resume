@@ -4,5 +4,5 @@
 *.out
 *.run.xml
 *.synctex.gz
-*.synctex.gx(busy)
+*.synctex.gz(busy)
 .gitignore~
