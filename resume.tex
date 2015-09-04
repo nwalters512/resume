@@ -19,10 +19,14 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[print]{resume} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+% DOCUMENT OPTIONS
+% Add 'print' as an option into the square bracket to remove colors from this template for printing
+% Add 'nofooter' to remove the 'Compiled on DATE' footer
+
+\documentclass[print,nofooter]{resume} 
 
 \pagestyle{fancy}
-\rfoot{Compiled on \today}
+\rfoot{\printfooter{Compiled on \today}}
 \cfoot{}
 \lfoot{}
 \usepackage{amssymb}
@@ -36,16 +40,17 @@
 %----------------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
-\section{contact}
-~
-\textbf{current residence}
+\section{contact}\vspace{0.25cm}
+\textbf{campus residence}
 918 W Illinois St
 Towsend 533A
-Urbana, IL 61801
+Urbana, IL
+61801
 ~
 \textbf{permanent residence}
 519 S Vail Ave
-Arlington Hts, IL 60005
+Arlington Heights, IL
+60005
 ~
 847.312.8411
 ~
@@ -58,9 +63,9 @@ Arlington Hts, IL 60005
 %	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
 
-\section{summary}
+%\section{summary}
 
-I am currently a freshman at the University of Illinois Urbana-Champaign studying computer science. I am a largely self-taught programmer seeking to increase my knowledge of real-world software development. I love working on teams, am passionate about writing beautiful and well-designed code, and am driven to learn more and expand my abilities.
+%I am currently a freshman at the University of Illinois Urbana-Champaign studying computer science. I am a largely self-taught programmer seeking to increase my knowledge of real-world software development. I love working on teams, am passionate about writing beautiful and well-designed code, and am driven to learn more and expand my abilities.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -74,18 +79,19 @@ I am currently a freshman at the University of Illinois Urbana-Champaign studyin
 
 \entry
 {2015--present}
-{Bachelor {\normalfont of Computer Science}}
 {University of Illinois Urbana-Champaign}
-{Expected graduation: May 2019}
+{}
+{Bachelor of Computer Science \\
+Expected graduation: May 2019}
 
 %------------------------------------------------
 
 \entry
 {2011--2015}
-{High School}
 {Rolling Meadows High School}
+{}
 {Highest Honors \\
-Cumulative GPA of 5.41/5.0}
+Cumulative GPA: 5.41/5.0}
 
 %------------------------------------------------
 
@@ -105,15 +111,15 @@ Cumulative GPA of 5.41/5.0}
 
 \entry
 {2011--2015}
-{WILDSTANG ROBOTICS TEAM}
+{WildStang Robotics Team}
 {}
 {\emph{Programmer} \\
-Worked on the subteam that developed a variety of software projects related to the FIRST Robotics Competition. \\
+Worked on subteam that developed a variety of software projects related to FIRST Robotics Competition. \\
 Achievements:
-\begin{itemize}
+\noindent\begin{itemize}[leftmargin=0.45cm]
 \item Wrote code that powered four distinct competition robots
-\item Designed software that allowed the robots to complete complex tasks autonomously
-\item Created an open-source electronic system that facilitates the collection and analysis of data on other robots at competitions
+\item Designed software that allowed robots to complete complex tasks autonomously
+\item Created open-source electronic system that facilitates collection and analysis of data on other robots at competitions
 \item Developed internal utilities to aid with testing and debugging, including a logging system and log visualizer
 \end{itemize}}
 
@@ -121,13 +127,13 @@ Achievements:
 
 \entry
 {2013--2015}
-{THE BLUE ALLIANCE}
+{The Blue Alliance}
 {}
 {\emph{Developer} \\
-Led the development of a native Android application for The Blue Alliance, a web service that hosts robotics competition data. \\
+Led development of native Android application for The Blue Alliance, a web service that hosts robotics competition data. \\
 Achievements:
-\begin{itemize}
-\item Utilized existing APIs to bring a better experience to mible users
+\noindent\begin{itemize}[leftmargin=0.45cm]
+\item Utilized existing APIs to bring a better experience to mobile users
 \item Developed robust caching system to allow for offline use
 \item Regularly released new features and upgrades to nearly 8,000 users
 \end{itemize}}
@@ -140,12 +146,12 @@ Achievements:
 
 \section{skills}
 
-\begin{itemize}
+\noindent\begin{itemize}[leftmargin=0.45cm]
 \setlength{\itemsep}{-5pt}
-\item Exensive experience with Java, Android, Git/GitHub
+\item Extensive experience with Java, Android, Git/GitHub
 \item Basic knowledge of C/C++, JavaScript, Python
 \item Excellent with teamwork and collaboration
-\end{itemize}
+\end{itemize}\vspace{\parskip}
 
 
 %----------------------------------------------------------------------------------------
@@ -154,7 +160,7 @@ Achievements:
 
 \section{honors \& awards}
 
-\begin{itemize}
+\noindent\begin{itemize}[leftmargin=0.45cm]
 \setlength{\itemsep}{-5pt}
 \item Eagle Scout
 \item National Merit Scholarship Finalist
