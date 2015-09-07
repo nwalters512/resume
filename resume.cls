@@ -96,8 +96,8 @@
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
-    \node [] (name) at (4.1cm,0.8cm) {%
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2.7cm] (box) at (current page.north){};
+    \node [] (name) at (4.1cm,1.1cm) {%
       \fontsize{40pt}{72pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
     };
