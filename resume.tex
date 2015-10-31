@@ -23,13 +23,15 @@
 % Add 'print' as an option into the square bracket to remove colors from this template for printing
 % Add 'nofooter' to remove the 'Compiled on DATE' footer
 
-\documentclass[]{resume} 
+\documentclass[nofooter]{resume} 
 
 \pagestyle{fancy}
 \rfoot{\printfooter{Compiled on \today}}
 \cfoot{}
 \lfoot{}
 \usepackage{amssymb}
+
+\renewcommand{\headrulewidth}{0pt}
 
 \begin{document}
 
@@ -44,7 +46,7 @@
 \section{contact}\vspace{0.25cm}
 \textbf{campus residence}
 918 W Illinois St
-Towsend 533A
+Townsend 533A
 Urbana, IL
 61801
 ~
@@ -93,8 +95,7 @@ Expected graduation: May 2019}
 {2011--2015}
 {Rolling Meadows High School}
 {}
-{Highest Honors \\
-Cumulative GPA: 5.41/5.0}
+{Cumulative GPA: 5.41/5.0}
 
 %------------------------------------------------
 
@@ -120,10 +121,10 @@ Cumulative GPA: 5.41/5.0}
 Worked on subteam that developed a variety of software projects related to FIRST Robotics Competition. \\
 Achievements:
 \noindent\begin{itemize}[leftmargin=0.45cm]
-\item Wrote code that powered four distinct competition robots
+\item Wrote Java and C++ code that powered four distinct competition robots
 \item Designed software that allowed robots to complete complex tasks autonomously
-\item Created open-source electronic system that facilitates collection and analysis of data on other robots at competitions
-\item Developed internal utilities to aid with testing and debugging, including a logging system and log visualizer
+\item Created open-source Android app that facilitated collection and analysis of data on robots at competitions
+\item Developed internal utilities to aid with testing and debugging, including a Beaglebone-powered logging system and log visualizer
 \item Taught and mentored younger students
 \end{itemize}}
 
@@ -137,8 +138,8 @@ Achievements:
 Led development of native Android application for The Blue Alliance, a web service that hosts robotics competition data. \\
 Achievements:
 \noindent\begin{itemize}[leftmargin=0.45cm]
-\item Utilized existing APIs to bring a better experience to mobile users
-\item Developed robust caching system to allow for offline use
+\item Utilized existing RESTful APIs to bring a better experience to mobile users
+\item Helped design account feature that enabled push notifications and cross-platform favorites synchronization
 \item Regularly released new features and upgrades to nearly 8,000 users
 \end{itemize}}
 
@@ -154,7 +155,7 @@ Achievements:
 \setlength{\itemsep}{-5pt}
 \item Extensive experience with Java, Android, Git/GitHub
 \item Basic knowledge of C/C++, JavaScript, Python
-\item Excellent with teamwork and collaboration
+\item Excellent at collaborating on teams
 \end{itemize}\vspace{\parskip}
 
 
