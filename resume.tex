@@ -32,6 +32,7 @@
 \usepackage{amssymb}
 
 \renewcommand{\headrulewidth}{0pt}
+\renewcommand{\baselinestretch}{1.02}
 
 \begin{document}
 
@@ -42,11 +43,13 @@
 %----------------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
-~\vspace{0.0cm}
-\section{contact}\vspace{0.25cm}
+~\vspace{-0.42cm} % Fix to align this header with "summary" in the body
+\section{contact}
+\vspace{-0.16cm} % Aligns first line in aside with first line in body
+~
 \textbf{campus residence}
-918 W Illinois St
-Townsend 533A
+1012 W Illinois St
+Wardall Hall 922B
 Urbana, IL
 61801
 ~
@@ -66,11 +69,9 @@ Arlington Heights, IL
 %	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
 
-
-\vspace{0.1cm} % Fix to align this header with "contact" in the aside
 \section{summary}
 
-I am currently a freshman at the University of Illinois Urbana-Champaign studying computer science. I am a largely self-taught programmer seeking to increase my knowledge of real-world software development. I love working on teams, am passionate about writing beautiful and well-designed code, and am driven to learn more and expand my abilities.
+I am a sophomore at the University of Illinois Urbana-Champaign studying computer science.  I am passionate about writing beautiful and well-designed code and love working on teams.  A largely self-taught programmer, I am driven to learn more and expand my abilities and am seeking to increase my knowledge of real-world software development.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -87,6 +88,7 @@ I am currently a freshman at the University of Illinois Urbana-Champaign studyin
 {University of Illinois Urbana-Champaign}
 {}
 {Bachelor of Computer Science \\
+Current GPA: 4.0/4.0 \\
 Expected graduation: May 2019}
 
 %------------------------------------------------
@@ -114,19 +116,10 @@ Expected graduation: May 2019}
 %------------------------------------------------
 
 \entry
-{2011--2015}
-{WildStang Robotics Team}
+{2017--present}
+{PrairieLearn}
 {}
-{\emph{Programmer} \\
-Worked on subteam that developed a variety of software projects related to FIRST Robotics Competition. \\
-Achievements:
-\noindent\begin{itemize}[leftmargin=0.45cm]
-\item Wrote Java and C++ code that powered four distinct competition robots
-\item Designed software that allowed robots to complete complex tasks autonomously
-\item Created open-source Android app that facilitated collection and analysis of data on robots at competitions
-\item Developed internal utilities to aid with testing and debugging, including a Beaglebone-powered logging system and log visualizer
-\item Taught and mentored younger students
-\end{itemize}}
+{Implemented a feature for PrairieLearn, UIUC's computerized testing and homework software, that enables the real-time grading of student code submissions.}
 
 %------------------------------------------------
 
@@ -134,13 +127,26 @@ Achievements:
 {2013--present}
 {The Blue Alliance}
 {}
-{\emph{Developer} \\
-Led development of native Android application for The Blue Alliance, a web service that hosts robotics competition data. \\
+{Contributed to The Blue Alliance, an open-source web service that hosts FIRST robotics competition data. \\
 Achievements:
 \noindent\begin{itemize}[leftmargin=0.45cm]
-\item Utilized existing RESTful APIs to bring a better experience to mobile users
-\item Helped design account feature that enabled push notifications and cross-platform favorites synchronization
-\item Regularly released new features and upgrades to nearly 8,000 users
+\item Led development of native Android application
+\item Designed and implemented a UI for the app that was based on Google's Material \\Design spec
+\item Utilized React to create a modern, maintainable codebase for GameDay, a service that makes it easy to find and view webcasts from multiple events at once
+\end{itemize}}
+
+%------------------------------------------------
+
+\entry
+{2011--2015}
+{WildStang Robotics Team}
+{}
+{Worked on subteam that developed a variety of software projects related to the FIRST Robotics Competition. \\
+Achievements:
+\noindent\begin{itemize}[leftmargin=0.45cm]
+\item Wrote Java and C++ code that powered four distinct competition robots
+\item Created open-source Android app that facilitated collection and analysis of data on robots at competitions
+\item Taught and mentored younger students
 \end{itemize}}
 
 \end{entrylist}
@@ -153,11 +159,10 @@ Achievements:
 
 \noindent\begin{itemize}[leftmargin=0.45cm]
 \setlength{\itemsep}{-5pt}
-\item Extensive experience with Java, Android, Git/GitHub
-\item Basic knowledge of C/C++, JavaScript, Python
-\item Excellent at collaborating on teams
+\item Extensive experience with JavaScript, Java, Android, Git/GitHub
+\item Proficient in C/C++
+\item Skilled at collaborating on teams
 \end{itemize}\vspace{\parskip}
-
 
 %----------------------------------------------------------------------------------------
 %	HONORS & AWARDS SECTION
@@ -168,9 +173,7 @@ Achievements:
 \noindent\begin{itemize}[leftmargin=0.45cm]
 \setlength{\itemsep}{-5pt}
 \item Eagle Scout
-\item UIUC: James Scholar, Chancellor's Scholar
-\item High School: math and physics departmental awards
-\item National Merit Scholarship Finalist
+\item UIUC: Chancellor's Scholar, James Scholar
 \end{itemize}
 
 \end{document}
