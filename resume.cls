@@ -71,7 +71,7 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont[]{SourceSansPro-Regular.otf}
 \newfontfamily\thinfont[]{SourceSansPro-ExtraLight.otf}
@@ -141,12 +141,12 @@
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{.5\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{.3\parskip}
+  \par\vspace{.1\parskip}
 }
 
 \renewcommand{\subsection}[1]{
