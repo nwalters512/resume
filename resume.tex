@@ -23,7 +23,7 @@
 % Add 'print' as an option into the square bracket to remove colors from this template for printing
 % Add 'nofooter' to remove the 'Compiled on DATE' footer
 
-\documentclass[nofooter,print]{resume} 
+\documentclass[nofooter]{resume} 
 
 \pagestyle{fancy}
 \rfoot{\printfooter{Compiled on \today}}
@@ -48,7 +48,7 @@
 \vspace{-0.16cm} % Aligns first line in aside with first line in body
 ~
 \textbf{campus residence}
-207 S 5th St \#204
+306 E Clark St \#102
 Champaign, IL
 61820
 ~
@@ -60,7 +60,6 @@ Arlington Heights, IL
 847.312.8411
 ~
 \href{mailto:nwalter2@illinois.edu}{nwalter2@illinois.edu}
-\href{http://www.nwalters.com}{nwalters.com}
 \href{http://github.com/nwalters512}{github.com/nwalters512}
 \end{aside}
 
@@ -70,7 +69,7 @@ Arlington Heights, IL
 
 \section{summary}
 
-I'm a junior at the University of Illinois Urbana-Champaign studying computer science.  I'm passionate about writing beautiful and well-designed code and love working on teams. I'm a strong believer in the power of open source, and I strive to create and contribute to projects that will be used and enjoyed by others.
+I'm a senior at the University of Illinois Urbana-Champaign studying computer science.  I'm passionate about writing beautiful and well-designed code and love working on teams. I'm a strong believer in the power of open source, and I strive to create and contribute to projects that will be used and enjoyed by others.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -87,7 +86,7 @@ I'm a junior at the University of Illinois Urbana-Champaign studying computer sc
 {University of Illinois Urbana-Champaign}
 {}
 {Bachelor of Computer Science \\
-Current GPA: 4.0/4.0 \\
+Current GPA: 3.95/4.0 \\
 Expected graduation: May 2019}
 
 %------------------------------------------------
@@ -115,15 +114,27 @@ Expected graduation: May 2019}
 %------------------------------------------------
 
 \entry
+{Summer 2018}
+{NerdWallet}
+{San Fransisco, CA}
+{Worked as an intern on the Frontend Infrastructure team to improve the tools and processes used by engineers.
+\noindent\begin{itemize}[leftmargin=0.45cm]
+\item Built tool called Shepherd to automate code changes across all repositories
+\item Open-sourced Shepherd and evangelized it both inside and outside NerdWallet
+\item Wrote migrations for the tool to update apps to React 16, update their dependencies, use new versions of design system components, and more
+\item Replaced font icons with SVGs in component library to improve page load time
+\item Updated interstitial site to work with JavaScript disabled to ensure that clickthroughs perform correctly
+\end{itemize}}
+
+\entry
 {Summer 2017}
 {Zillow}
 {Seattle, WA}
-{Worked as an intern on the Activation team to help engage users on the site. \\
-Achievements:
+{Worked as an intern on the Activation team to help engage users on the site.
 \noindent\begin{itemize}[leftmargin=0.45cm]
 \item Designed and implemented feature discovery callouts to help drive engagement with the save search and save home features
 \item Assisted with moving the website nav and footer out of the existing monolithic web application and into a modern microservice
-\item Wrote community guidelines and documentation for Zillow's new open source efforts
+\item Wrote community guidelines and documentation for Zillow's open source efforts
 \item Created data entry interface for building managers as part of a project to bring special offers to rental listings
 \end{itemize}}
 
@@ -134,20 +145,6 @@ Achievements:
 {PrairieLearn}
 {}
 {Implemented a feature for PrairieLearn, UIUC's computerized testing and homework software, that enables the real-time grading of student code submissions.}
-
-%------------------------------------------------
-
-\entry
-{2013--present}
-{The Blue Alliance}
-{}
-{Contributed to The Blue Alliance, an open-source web service that hosts FIRST robotics competition data. \\
-Achievements:
-\noindent\begin{itemize}[leftmargin=0.45cm]
-\item Led development of native Android application
-\item Designed and implemented a UI for the app that was based on Google's Material \\Design spec
-\item Utilized React to create a modern, maintainable codebase for GameDay, a service that makes it easy to find and view webcasts from multiple events at once
-\end{itemize}}
 
 \end{entrylist}
 
