@@ -5,4 +5,4 @@
 *.run.xml
 *.synctex.gz
 *.synctex.gz(busy)
-.gitignore~
+.DS_Store
