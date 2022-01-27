@@ -5,4 +5,6 @@
 *.run.xml
 *.synctex.gz
 *.synctex.gz(busy)
+*.fls
+*.fdb_latexmk
 .DS_Store
